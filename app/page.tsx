@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -185,14 +184,14 @@ export default function HomePage() {
             {/* Right Side - Feature Labels */}
             <div className="space-y-4 pt-4">
               {/* Pull Up RN Feature - aligned with blue arrow */}
-              <div className="space-y-4" style={{ marginTop: "80px" }}>
+              <div className="space-y-4" style={{ marginTop: "60px" }}>
                 <h3 className="text-2xl md:text-3xl font-bold text-blue-600">
                   Pull Up RN: <br />
-                  <span className="font-normal">Make memories from spontaneity.</span>
+                  <span className="font-normal">Meet up spontaneously.</span>
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Invite your friends or meet up at moments notice with a story-like invitation. Best moments can happen
-                  when you least expect them.
+                  Invite your friends or meet up at moments notice with a story-like invitation. Good company can never
+                  hurt.
                 </p>
               </div>
 
@@ -339,7 +338,7 @@ export default function HomePage() {
           </div>
 
           {/* Text in between the waves */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-4 text-center py-[0x] opacity-100">
+          <div className="absolute inset-0 flex flex-col justify-center items-center z-10 px-4 text-center py-0 opacity-100">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Cornellians use Pull Up for</h2>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
               Discover how students at Cornell University are using Pull Up to connect, organize, and make the most of
@@ -406,133 +405,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="container mx-auto px-8">
-          <div className="grid md:grid-cols-4 gap-12">
-            {/* Download Section */}
-            <div className="md:col-span-2 space-y-6">
-              <h3 className="text-2xl font-bold">Get Pull Up</h3>
-              <p className="text-gray-300 text-lg">Start making spontaneous memories with your friends today.</p>
-
-              {/* App Store Button */}
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <div className="bg-black border border-gray-600 rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors cursor-pointer">
-                  <div className="text-2xl">📱</div>
-                  <div>
-                    <div className="text-xs text-gray-300">Download on the</div>
-                    <div className="text-lg font-semibold">App Store</div>
-                  </div>
-                </div>
-
-                {/* QR Code Placeholder */}
-                <div className="bg-white p-4 rounded-lg">
-                  <div className="w-24 h-24 bg-gray-200 rounded flex items-center justify-center">
-                    <div className="text-center text-gray-500 text-xs">
-                      <div className="text-2xl mb-1">📱</div>
-                      <div>QR Code</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Product Links */}
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Product</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>
-                  <Link href="/features" className="hover:text-white transition-colors">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/updates" className="hover:text-white transition-colors">
-                    Updates
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/cornell" className="hover:text-white transition-colors">
-                    For Cornell
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/pricing" className="hover:text-white transition-colors">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/faq" className="hover:text-white transition-colors">
-                    FAQ
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Company & Support Links */}
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold">Company</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>
-                  <Link href="/about" className="hover:text-white transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-white transition-colors">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/support" className="hover:text-white transition-colors">
-                    Support
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="hover:text-white transition-colors">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/terms" className="hover:text-white transition-colors">
-                    Terms of Service
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Section */}
-          <div className="border-t border-gray-700 mt-12 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="flex items-center space-x-4">
-                <div className="flex flex-col items-center font-bold text-lg text-white leading-tight">
-                  <div>PULL</div>
-                  <div>UP</div>
-                </div>
-                <span className="text-gray-400">© 2024 Pull Up. All rights reserved.</span>
-              </div>
-
-              {/* Social Links */}
-              <div className="flex space-x-6">
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="sr-only">Instagram</span>
-                  <div className="w-6 h-6 bg-gray-400 rounded"></div>
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="sr-only">Twitter</span>
-                  <div className="w-6 h-6 bg-gray-400 rounded"></div>
-                </Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <span className="sr-only">TikTok</span>
-                  <div className="w-6 h-6 bg-gray-400 rounded"></div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
